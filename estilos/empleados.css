@@ -1,0 +1,49 @@
+body{
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0px;
+}
+.navi{
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navegar:hover{
+    cursor: pointer;
+    background: #536976;
+}
+.ve-tabla{
+    margin: 90px;
+    margin-left: 120px;
+    border: 2px solid black;
+    text-align: center;
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+thead, .tab-ml{
+    border: 2px solid black;
+    width: 400px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+tbody, .info{
+    border: 2px solid black; 
+    width: 400px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
