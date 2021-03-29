@@ -1,4 +1,4 @@
-<!---->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@
                     <a class="nav-link nav-tex" href="empleados.php">Empleados</a>
                 </li>
                 <li class="nav-item active navegar">
-                    <a class="nav-link active nav-tex" href="#" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
+                    <a class="nav-link active nav-tex" href="../php/cerrarsesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
                 <td class="info">Hola</td>
                 <td class="info">Hola</td>
                 <td class="info">Hola</td>
-                <td class="info"><a href="">Editar</a> - <a href="">Eliminar</a> - <a href="../php/crear.php">Crear</a> </td>
+                <td class="info"><a href="">Editar</a> - <a href="">Eliminar</a> - <a href="crear.php">Crear</a> </td>
             </tr>
         </tbody>
     </table>

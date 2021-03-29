@@ -85,6 +85,9 @@
                             <!-- TABS CONTENT LOGIN -->
                     		<div id="login-tab-content" class="active">
                     			<form action="valida/valida-cli.php" method="POST" class="login-form">
+                                    <input type="number" class="input" name="docume" placeholder="Ingrese Documento" autocomplete="off">
+                                    <input type="text" class="input" name="nomb" placeholder="Ingrese Nombre" autocomplete="off">
+                                    <input type="text" class="input" name="apel" placeholder="Ingrese Apellido" autocomplete="off">
                     				<input type="submit" class="button btn-compra" name="compra" value="Comprar">
                     			</form>
                                 <div class="help-action">

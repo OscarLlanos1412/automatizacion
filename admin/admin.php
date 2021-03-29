@@ -1,3 +1,13 @@
+<?php
+    //Archivo que permite validar la sesi�n
+    // session_start();
+
+    // if(!isset($_SESSION['username']) || !isset($_SESSION['id_tip_user']))
+    // {
+    //     header("Location: ../index.php");
+    //     exit;
+    // 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +34,13 @@
                     <a class="nav-link" href="empleados.php">Empleados</a>
                 </li>
                 <li class="nav-item active navegar">
-                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
+                    <a class="nav-link active" href="../php/cerrarsesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam ab delectus! Ab aut similique odit facere! Aperiam, incidunt reiciendis voluptate minus unde debitis nostrum, vero asperiores, dolorem rerum illo?</h3>
-    </div>
+    <!-- <div class="container">
+
+    </div> -->
 </body>
 </html>

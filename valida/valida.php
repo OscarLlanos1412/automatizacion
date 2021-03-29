@@ -1,8 +1,8 @@
 <?php
     require '../conec/connec.php';
-
+    session_start();
     if($_POST["ingreso"]){
-        //Declaramos las variables para almacenar los datos digitados
+        //Declaramos las variables para almacenar los datos digitado
         $user = $_POST['userna'];
         $clave = $_POST['clave'];
 
