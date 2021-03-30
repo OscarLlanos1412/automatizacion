@@ -18,11 +18,11 @@
         
         if(!$query){
             echo '<script> alert ("Error al registra el producto");</script>';
-            echo '<script> window.location="../cliente/clie.php" </script>';
+            echo '<script> window.location="../clientes/busca.php" </script>';
         }
         else{
             echo '<script> alert ("Exito al registrar producto");</script>';
-            echo '<script> window.location="../cliente/clie.php" </script>';
+            echo '<script> window.location="../clientes/busca.php" </script>';
 
         }
     }

@@ -4,7 +4,7 @@
 
 
 .title{
-    margin-top: 20px;
+    margin-top: -20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(168, 141, 100);
     position: absolute;
@@ -17,20 +17,8 @@
     width: 40px;
     height: 40px;
 }
-.tabla{
-    align-items: center;
-    padding: 20px;
-    border: 2px solid rgb(20, 20, 20);
-    margin-top: 175px;
-    text-align: center;
-    margin-left: 350px;
-    margin-right: 20px;
-}
-
-.campos{
-    border: 2px solid #0025;
-    margin-left:20px;
-    margin-right: 20px;
+.logotipo{
+    font-size: 15px;
 }
 .formu-prod{
     margin-top: 40px;
@@ -38,10 +26,10 @@
 
  /* ----- PORTADA ----- */
 .conta-regre{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 25%;
     height: 110px;
-    margin: -50px 500px;
+    margin: 40px 500px;
 }
 .portada {
 	width: 50%;

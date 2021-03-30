@@ -1,8 +1,8 @@
 <?php
     require '../conec/connec.php';
 
-    if($_POST['btn-pro']){
-        $id = $_POST['produ'];
+    if(isset($_GET['cod'])){
+        $id = $_GET['cod'];
         
         
         $consul = "SELECT precio, nom_produ FROM producto WHERE id_prod = '$id'";
