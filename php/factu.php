@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="inserprod.php" method="POST" class="fac">
+    <form action="" class="fac">
         <h1>Total Compra</h1>
         <h3>Documento <?php echo $docu; ?></h3>
         <table class="tabla"><br>

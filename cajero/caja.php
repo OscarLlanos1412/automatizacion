@@ -15,13 +15,8 @@
 <body>
     <form action="../php/bus-cli.php" class="formu-prod" method="POST">
         <label for="">Buscar Cliente</label>
-        <input type="number" name="nume-fa" class="prod" placeholder="Ingrese Documento Para la Factura" autocomplete="off">
+        <input type="number" name="documento" class="prod" placeholder="Ingrese Documento Para la Factura" autocomplete="off">
         <input type="submit" name="facturar" id="en-pro" value="Buscar">
     </form>
-
-
-
-    <script src="../js/simplyCountdown.min.js"></script>
-    <script src="../js/cuenta-regre.js"></script>
 </body>
 </html>
