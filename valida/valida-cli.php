@@ -31,7 +31,7 @@
             // $fecha_total = 
             //Mensaje de exito e insercion
             echo '<script> alert ("Exito al registrarlo");</script>';
-            echo '<script> window.location="../cliente/index.php" </script>';
+            echo '<script> window.location="../clientes/busca.php" </script>';
             $consul = "INSERT INTO compra(num_fac, doc_user, time_ini, time_fin, id_esta_comp) VALUES('', '$doc', '$fecha_ini', '$fecha_fin', '$esta')";
             $query = mysqli_query($mysqli,$consul);
             echo "Si se inserto en la otra"; 

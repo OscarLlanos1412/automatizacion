@@ -26,7 +26,8 @@
                     $sql="SELECT * FROM deta_compra INNER JOIN producto ON deta_compra.id_prod = producto.id_prod 
                     INNER JOIN compra ON deta_compra.num_fac = compra.num_fac WHERE doc_user = '$docu'";
                     $result=mysqli_query($mysqli,$sql);
-                    while($mostrar=mysqli_fetch_array($result)){ 
+                    while($mostrar=mysqli_fetch_array($result)){
+                        $numero = $mostrar['num_fac']; 
                 ?>
                     <tr>
                         <!-- <td class="campos"></td> -->
@@ -36,11 +37,18 @@
                         <td class="campos" id="sub"><?php echo $mostrar['subtotal'] ?></td>
                     </tr>
                     <?php
+
                         }
                     ?>
         </table>
-        <div>
-            <label for="" id="total">Total </label>
+        <div class="tabl">
+                        <label class="campo" name="num_fac" for="" id="total">Total =</label>
+                        <?php
+                        $consult = "SELECT SUM(subtotal) FROM deta_compra where num_fac = '$numero'";
+                        $total = mysqli_query($mysqli,$consult);
+                        $tfac = mysqli_fetch_array($total);
+                        echo($tfac[0]);
+                        ?>
         </div>
 
     </form>
