@@ -37,7 +37,7 @@
                                 let time_in_hours = 1000 * 60;
                                 let resta = fecha_fin - fecha_ac;
                                 console.log(resta / time_in_hours);
-                                if(resta / time_in_hours == 30){
+                                if(resta / time_in_hours <= 30){
                                     let alerta = alert("Le quedan 30 Minutos");
                                 }
                                 else if(resta / time_in_hours == 0){

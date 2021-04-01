@@ -25,7 +25,7 @@
                         <span>'.$item['precio'].'</span>
                     </div>
                     <div class="btn1">
-                        <input name="btn-pro"><a href="../php/prod.php?accion=modificar&cod='.$item['id_prod'].'"?>Calificar</a></input>
+                        <button><a href="../php/prod.php?accion=modificar&cod='.$item['id_prod'].'"?>Agregar Al Carro</a></button>
                     </div>
                 </li>
             ';

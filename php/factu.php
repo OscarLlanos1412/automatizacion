@@ -48,7 +48,9 @@
                         $total = mysqli_query($mysqli,$consult);
                         $tfac = mysqli_fetch_array($total);
                         echo($tfac[0]);
-                        ?>
+                        ?> <br><br>
+                        <button><a href="cerrarsesion.php">Terminar Compra</a></button>
+                        <button><a href="../clientes/busca.php">Regresar</a></button>
         </div>
 
     </form>
