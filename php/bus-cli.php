@@ -115,10 +115,14 @@
 <?php
         }
         else{
-            echo '<script> alert ("Digite Documento");</script>';
+            echo '<script> alert ("Ups algo fallo, intentalo de nuevo");</script>';
             echo '<script> window.location="../cajero/caja.php" </script>';
         }
-      } 
+    } 
+    else{
+        echo '<script> alert ("Digite Documento");</script>';
+        echo '<script> window.location="../cajero/caja.php" </script>';
+    }
 ?>
 <?php
     }
