@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/caja.css">
-    <title>Document</title>
+    <title>Buscador</title>
 </head>
 <body>
     <form action="../php/bus-cli.php" class="formu-prod" method="POST">

@@ -34,8 +34,34 @@
             </ul>
         </div>
     </nav>
+    <h1>Nombre Supermercado</h1>
     <div class="slider">
-        <img src="../img/adminis.jpg" alt="">
+        <img  name="slider" alt="" width="800px" height="460px" style="border-radius: 12px; border: 2px solid black;">
     </div>
+    <script>
+        window.addEventListener('load', function(){
+            console.log('El contenido se cargo');
+            
+            var imagenes = [];
+            imagenes[0] = "../img/adminis.jpg";
+            imagenes[1] = "../img/adminis2.jpg";
+            imagenes[2] = "../img/adminis3.jpeg";
+            imagenes[3] = "../img/adminis4.jpg";
+
+            var indice = 0;
+
+            function cambiarImagenes(){
+                document.slider.src = imagenes[indice];
+                if(indice < 2){
+                    indice ++;
+                }
+                else{
+                    indice = 0;
+                }
+            }
+            setInterval(cambiarImagenes, 3000);
+            
+        })
+    </script>
 </body>
 </html>

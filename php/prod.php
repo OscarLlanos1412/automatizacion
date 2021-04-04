@@ -16,7 +16,7 @@
             <html lang="en">
             <head>
                 <link rel="stylesheet" href="../estilos/clie-pro.css">
-                <title>Document</title>
+                <title>Ventan Modal</title>
             </head>
             <body>
               <div class="modal is-visible" id="modal1" data-animation="slideInOutLeft">
@@ -24,13 +24,13 @@
                   <header class="modal-header">
                     Agregar Productos Al Carro
                     <button class="close-modal" aria-label="close modal" data-close>
-                      ✕  
+                      X  
                     </button>
                   </header>
                   <section class="modal-content">
                     <form action="../php/insertarprod.php" method="POST" class="form-prod">
                       <label for="">Producto</label><br>
-                      <input type="text" name="nom-prod" value="<?php echo $file['nom_produ']; ?>"><br>
+                      <input type="text" id="nom" name="nom-prod" value="<?php echo $file['nom_produ']; ?>"><br>
                       <input type="hidden" name="id" value="<?php echo $id; ?>">
                       <label for="">Cantidad</label><br>
                       <input type="number" name="cant" id="canti" placeholder="Ingrese Cantidad"><br>

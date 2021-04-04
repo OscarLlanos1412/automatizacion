@@ -19,3 +19,19 @@ nav{
     background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+.slider{
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 800px;
+    border-radius: 12px;
+    box-shadow: 6px 20px 10px black;
+}
+.slider:hover{
+    cursor: pointer;
+}

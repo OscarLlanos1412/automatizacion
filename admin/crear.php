@@ -23,6 +23,7 @@
         <label for="doc">Clave Del Empleado</label><br>
         <input type="password" class="clav" name="clave" placeholder="Ingrese Clave"><br><br>
         <input type="submit" class="btn" name="registro" value="Crear Empleado">
+        <button class="btn"><a href="admin.php">Regresar</a></button>
     </form>
 </body>
 </html>
