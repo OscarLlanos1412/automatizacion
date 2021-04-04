@@ -1,4 +1,6 @@
-
+<?php
+    require_once('../conec/connec.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/empleados.css">
-    <title>Document</title>
+    <title>Tabla Empleados</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navi">
@@ -25,11 +27,16 @@
                     <a class="nav-link nav-tex" href="empleados.php">Empleados</a>
                 </li>
                 <li class="nav-item active navegar">
+                    <a class="nav-link nav-tex" href="crear.php">Crear Empleados</a>
+                </li>
+                <li class="nav-item active navegar">
                     <a class="nav-link active nav-tex" href="../php/cerrarsesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
+    
+    </div>
     <div class="container">
     <table class="ve-tabla">
         <thead class="tab">
@@ -41,15 +48,25 @@
                 <td class="tab-ml">Acciones</td>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td class="info">Hola</td>
-                <td class="info">Hola</td>
-                <td class="info">Hola</td>
-                <td class="info">Hola</td>
-                <td class="info"><a href="">Editar</a> - <a href="">Eliminar</a> - <a href="crear.php">Crear</a> </td>
-            </tr>
-        </tbody>
+        <form action="../php/acciones.php" method="post">
+            <tbody>
+                <?php
+                    $cons_user = "SELECT * FROM user WHERE id_tip_user = '2'";
+                    $query = mysqli_query($mysqli,$cons_user);
+                    while($file = mysqli_fetch_array($query)){
+                ?>
+                <tr>
+                    <td class="info" name="documento"><?php echo $file[0]; ?></td>
+                    <td class="info" name="nombre"><?php echo $file[1]; ?></td>
+                    <td class="info" name="apellido"><?php echo $file[2]; ?></td>
+                    <td class="info" name="user"><?php echo $file[3]; ?></td>
+                    <td class="info"> <a href="../php/elim.php?documento=<?php echo $eliminar=$file[0]; ?>">Eliminar</a> </td>
+                </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </form>
     </table>
     </div>
 </body>

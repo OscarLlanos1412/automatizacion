@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/factura.css">
     <title>Document</title>
 </head>
 <body>
@@ -42,15 +43,15 @@
                     ?>
         </table>
         <div class="tabl">
-                        <label class="campo" name="num_fac" for="" id="total">Total =</label>
-                        <?php
-                        $consult = "SELECT SUM(subtotal) FROM deta_compra where num_fac = '$numero'";
-                        $total = mysqli_query($mysqli,$consult);
-                        $tfac = mysqli_fetch_array($total);
-                        echo($tfac[0]);
-                        ?> <br><br>
-                        <button><a href="cerrarsesion.php">Terminar Compra</a></button>
-                        <button><a href="../clientes/busca.php">Regresar</a></button>
+            <label class="campo" name="num_fac" for="" id="total">Total =</label>
+            <?php
+            $consult = "SELECT SUM(subtotal) FROM deta_compra where num_fac = '$numero'";
+            $total = mysqli_query($mysqli,$consult);
+            $tfac = mysqli_fetch_array($total);
+            echo($tfac[0]);
+            ?> <br><br>
+            <button class="buton1"><a href="cerrar.php">Terminar Compra</a></button>
+            <button class="buton1"><a href="../clientes/busca.php">Regresar</a></button>
         </div>
 
     </form>

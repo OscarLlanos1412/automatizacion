@@ -12,12 +12,15 @@ for (const el of openEls) {
 for (const el of closeEls) {
   el.addEventListener("click", function() {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+    window.location="../clientes/busca.php";
   });
 }
 
 document.addEventListener("click", e => {
   if (e.target == document.querySelector(".modal.is-visible")) {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
+    window.location="../clientes/busca.php";
+    alert("No De Click Fuera De La Ventana Por Favor");
   }
 });
 
@@ -25,5 +28,6 @@ document.addEventListener("keyup", e => {
   // if we press the ESC
   if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
+    window.location="../clientes/busca.php";
   }
 });

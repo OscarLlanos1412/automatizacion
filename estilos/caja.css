@@ -1,3 +1,42 @@
+body{
+    background: url(../img/cajeros.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.formu-prod{
+    border: 2px solid black;
+    width: 230px;
+    text-align: center;
+    background: white;
+    margin-top: 200px;
+    border-radius: 10px;
+    margin-left: 32pc;
+}
+label{
+    font-size: 26px;
+}
+.prod{
+    height: 30px;
+    border-radius: 10px;
+}
+#en-pro{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sele{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sele:hover{
+    cursor: pointer;
+}
+#en-pro:hover{
+    cursor: pointer;
+    box-shadow: 7px 9px 10px grey inset;
+}
 .tabla{
     align-items: center;
     padding: 20px;
@@ -16,8 +55,6 @@
 .campo{
     border: none;
 }
-
-
 .tabl{
     padding: 20px;
     border: 5px solid rgb(20, 20, 20);

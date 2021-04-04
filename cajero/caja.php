@@ -14,9 +14,21 @@
 </head>
 <body>
     <form action="../php/bus-cli.php" class="formu-prod" method="POST">
-        <label for="">Buscar Cliente</label>
-        <input type="number" name="documento" class="prod" placeholder="Ingrese Documento Para la Factura" autocomplete="off">
-        <input type="submit" name="facturar" id="en-pro" value="Buscar">
+        <label for="">Buscar Cliente</label><br><br>
+        <input type="number" name="documento" class="prod" placeholder="Ingrese Documento Cliente" autocomplete="off"><br><br>
+        <select name="sel_tip" id="sele" autocomplete="off">
+            <option value="0">Tipo de pago</option>
+            <?php
+                $tipo = "SELECT * FROM tipo_pago";
+                $inser = mysqli_query($mysqli,$tipo);
+                while($tip = mysqli_fetch_array($inser)){
+            ?>
+            <option name="tipo" value="<?php echo $tip[0]; ?>"><?php echo $tip[1]; ?></option>
+            <?php
+            }
+            ?>
+        </select>
+        <input type="submit" name="facturar" id="en-pro" value="Buscar"><br><br>
     </form>
 </body>
 </html>

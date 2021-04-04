@@ -28,8 +28,9 @@
                         global $most;
                         while($most=mysqli_fetch_array($res)){
                     ?>
-                            <label for=""><?php echo $most[0]; ?></label><br>
+                            <label for="" id="fe-in"><?php echo $most[0]; ?></label><br>
                             <label id="fec-fin" for=""><?php echo $most[1]; ?></label>
+                            
                             <script>
                                 let $fec_fin = document.getElementById("fec-fin").textContent;
                                 let fecha_ac = new Date().getTime();
@@ -37,11 +38,39 @@
                                 let time_in_hours = 1000 * 60;
                                 let resta = fecha_fin - fecha_ac;
                                 console.log(resta / time_in_hours);
-                                if(resta / time_in_hours <= 30){
+                                if(resta / time_in_hours >= 29 && resta / time_in_hours <= 30){
                                     let alerta = alert("Le quedan 30 Minutos");
                                 }
-                                else if(resta / time_in_hours == 0){
+
+                                if(resta / time_in_hours >= 0 && resta / time_in_hours <= 1){
                                     let mensaje = confirm("Desea continuar");
+                                    if(mensaje){
+                                        //Agregar 30 Min mas a la BD
+                                        fetch('templates/reloj.php/?docu=<?php echo $docu; ?>&fecha_fin=<?php echo $most[1];?>', {
+                                            method: 'GET',
+                                        })
+                                         .then(res => res.ok ? res.json(): Promise.reject(res))
+                                         .then(data => {
+                                             console.log(data);
+                                             if(data == 'ok'){
+                                                alert("Se agrego una hora mas");
+                                             }
+                                         })
+                                    }
+                                    else{
+                                        //Terminar Sesion
+                                        fetch('templates/reloj.php/?docu=<?php echo $docu; ?>', {
+                                            method: 'GET',
+                                        })
+                                         .then(res => res.ok ? res.json(): Promise.reject(res))
+                                         .then(data => {
+                                             console.log(data);
+                                             if(data == 'ok2'){
+                                                alert("Termino su compra");
+                                                window.location="./../index.php";
+                                             }
+                                         })
+                                    }
                                 }
                             </script>
                     <?php

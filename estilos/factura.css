@@ -1,0 +1,45 @@
+body{
+    background: url(../img/clie3.jpeg) no-repeat center fixed;
+    background-size: cover;
+}
+.fac{
+    position: absolute;
+    left: 910px;
+}
+
+.tabla{
+    align-items: center;
+    padding: 20px;
+    border: 5px solid rgb(236, 228, 149);
+    text-align: center;
+}
+
+.campos{
+    border: 5px solid rgb(236, 228, 149);
+}
+
+.tabl{
+    align-items: center;
+    border: 5px solid rgb(236, 228, 149);
+    margin-top: 20px;
+    padding:10px;
+}
+.campo{
+   margin-top:20px;
+    border: 5px solid rgb(236, 228, 149);
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.buton1{
+    background-color: rgb(236, 228, 149);
+}
+
+.buton1:hover {background-color: #ccc345}
+.buton1:hover{
+  background-color: #ccc345;
+  box-shadow: 0 5px rgb(201, 165, 6);
+  transform: translateY(3px);
+}

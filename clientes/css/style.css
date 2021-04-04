@@ -11,6 +11,9 @@ body {
 header {
     width: 50%;
     text-align: center;
+    margin-left: 360px;
+    margin-top: 10px;
+    padding: 10px;
 }
 header nav {
     display: flex;
@@ -64,25 +67,25 @@ header nav form #response li img {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.single .product {
+.prod::first-letter{
+    text-transform: uppercase;
+}
+.single .prod {
     width: 180px;
     text-align: center;
+    text-transform: capitalize;
     margin: 5px 1px;
-    /* background: #eeeeee; */
     padding: 2px;
     border: 1px solid #000;
 }
-.single .product .img {
+.single .prod .img {
     width: 100%;
     margin: 0px auto;
 }
-.single .product img {
-    width: 100%;
-}
-.single .product .title {
+.single .prod .title {
     color: #424242;
 }
-.single .product .price {
+.single .prod .price {
     font-size: 10pt;
     width: 70%;
     margin: auto;
@@ -105,4 +108,14 @@ footer {
     width: 100%;
     font-weight: 900;
     color: #d3d3d3;
+}
+.link{
+    background: #d0af84;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+.link:hover{
+    cursor: pointer;
+    background: #bd9354;
 }

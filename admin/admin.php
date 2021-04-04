@@ -1,12 +1,4 @@
 <?php
-    //Archivo que permite validar la sesi�n
-    // session_start();
-
-    // if(!isset($_SESSION['username']) || !isset($_SESSION['id_tip_user']))
-    // {
-    //     header("Location: ../index.php");
-    //     exit;
-    // 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/admin.css">
-    <title>Document</title>
+    <title>Administrador</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,13 +26,16 @@
                     <a class="nav-link" href="empleados.php">Empleados</a>
                 </li>
                 <li class="nav-item active navegar">
+                    <a class="nav-link nav-tex" href="crear.php">Crear Empleados</a>
+                </li>
+                <li class="nav-item active navegar">
                     <a class="nav-link active" href="../php/cerrarsesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- <div class="container">
-
-    </div> -->
+    <div class="slider">
+        <img src="../img/adminis.jpg" alt="">
+    </div>
 </body>
 </html>

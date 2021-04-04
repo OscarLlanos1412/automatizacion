@@ -18,14 +18,14 @@
         {
             echo '
                 <li class="item">
-                    <div class="title1">
+                    <div class="prod">
                         <h4>'.$item['nom_produ'].'</h4>
                     </div>
                     <div class="price">
                         <span>'.$item['precio'].'</span>
                     </div>
                     <div class="btn1">
-                        <button><a href="../php/prod.php?accion=modificar&cod='.$item['id_prod'].'"?>Agregar Al Carro</a></button>
+                        <a class="link" href="../php/prod.php?accion=modificar&cod='.$item['id_prod'].'"?>Agregar Al Carro</a>
                     </div>
                 </li>
             ';

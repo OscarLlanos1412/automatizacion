@@ -1,0 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url(../img/fondofac.jpeg) no-repeat center fixed;
+    background-size: cover;
+}
+.campos1{
+    font-weight: bold;
+}
+.tabla, td{
+    border: 2px solid black;
+    text-align: center;
+}
+.datos{
+    border: 2px solid black;
+    width: 330px;
+}
+.tabl{
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fac{
+    margin-top: -40px;
+    position: absolute;
+    left: 750px;
+    padding: 20px;
+}
+.boton{
+    font-size: 15px;
+    border-radius: 10px;
+    height: 30px;
+    top: 570px;
+    left: 800px;
+    position: absolute;
+}
+.link{
+    font-size: 15px;
+    border-radius: 10px;
+    height: 30px;
+    top: 570px;
+    left: 940px;
+    /* margin-top: 520px; */
+    /* margin-left: 10px; */
+    text-decoration: none;
+    position: absolute;
+}
+.link:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 1px grey;
+}
+.boton:hover{
+    cursor: pointer;
+    box-shadow: 6px 6px 1px grey;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
